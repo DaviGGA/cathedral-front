@@ -5,7 +5,7 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode
 }
 
-const btnClass = "bg-white rounded-2xl text-primary font-bold p-4 cursor-pointer hover:opacity-90 transition duration-200"
+const btnClass = "bg-white rounded-2xl text-primary font-bold px-4 py-2 cursor-pointer hover:opacity-90 transition duration-200"
 
 export function Button({children, ...props}: Props) {
 
