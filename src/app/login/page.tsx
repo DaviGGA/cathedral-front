@@ -29,7 +29,7 @@ export default function Login() {
         Forgot Password?
         </Link>
         <Button className="w-full">Login</Button>
-        <p className="text-sm sm:text-base">Want to create an account? <Link className="text-secondary" href={"/wa"}>Create Account</Link></p>
+        <p className="text-sm sm:text-base">Want to create an account? <Link className="text-secondary" href={"/signup"}>Create Account</Link></p>
       </div>
     </div>
     
