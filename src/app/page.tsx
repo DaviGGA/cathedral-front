@@ -1,6 +1,7 @@
+import StartLogin from "./login/start/page";
 
 export default function Home() {
   return (
-    <div className="bg-red">oei</div>
+    <StartLogin/>
   );
 }
