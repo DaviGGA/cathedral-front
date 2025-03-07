@@ -30,7 +30,7 @@ export default function Signup() {
   async function onClickCreateAccount(form: AccountForm) {
 
     if(form.password !== form.confirmPassword) {
-      alert("Password mismatch!");
+      toast.warning("Passwords must be equal.");
       return
     }
 
