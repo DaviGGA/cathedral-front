@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { createAccount } from "@/api/account-service";
 import {toast} from "react-toastify"
+import { useRouter } from "next/navigation";
 
 type AccountForm = {
   email: string,
@@ -25,7 +26,7 @@ export default function Signup() {
     confirmPassword: ""
   })
 
-  
+  const router = useRouter();
 
   async function onClickCreateAccount(form: AccountForm) {
 
@@ -46,7 +47,9 @@ export default function Signup() {
       return toast.error("Oops! An Error occurred.");
     }
 
-    toast.success("User successfully created!")
+    toast.success("User successfully created!");
+    
+    router.push("/login");
   }
   
 
